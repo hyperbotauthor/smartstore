@@ -1,0 +1,68 @@
+{
+  "name": "@publishvue/smartstore",
+  "version": "1.0.7",
+  "contributors": [
+    "hyperbotauthor <hyperchessbotauthor@gmail.com> (https://hyperchessbotsramblings.netlify.app)"
+  ],
+  "description": "Smart store.",
+  "keywords": [
+    "smart",
+    "store"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "",
+  "browser": "",
+  "unpkg": "",
+  "bin": {},
+  "config": {},
+  "files": [
+    "*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyperbotauthor/smartstore"
+  },
+  "homepage": "https://github.com/hyperbotauthor/smartstore/#readme",
+  "bugs": {
+    "url": "https://github.com/hyperbotauthor/smartstore/issues",
+    "email": "hyperchessbotauthor@gmail.com"
+  },
+  "scripts": {
+    "prepare": "",
+    "dev": "cp netlify/state.json .netlify && netlify dev --live",
+    "build": "netlify build",
+    "generate": "",
+    "clean": "",
+    "serve": "",
+    "prettier": "prettier -w src test",
+    "test": "jest",
+    "reset": "git fetch origin main && git reset --hard origin/main",
+    "prep": "yarn prettier && rollup -c",
+    "watch": "rollup -c --watch",
+    "dry": "netlify build --dry"
+  },
+  "dependencies": {
+    "@netlify/functions": "^0.8.0",
+    "@publishvue/fetchclient": "^1.0.5",
+    "@types/lodash": "^4.14.176",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.1.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@types/jest": "^27.0.2",
+    "jest": "^27.3.1",
+    "netlify-cli": "^6.14.16",
+    "node-fetch": "2.6.5",
+    "parse-git-config": "^3.0.0",
+    "prettier": "^2.4.1",
+    "rollup": "^2.59.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-jest": "^27.0.7",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "peerDependencies": {}
+}

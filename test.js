@@ -1,0 +1,1 @@
+console.log(require('./dist/index.umd.js').x)
